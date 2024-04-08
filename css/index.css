@@ -103,8 +103,6 @@ p {
   font-size: 3.5em;
   margin-bottom: 0px;
   text-align: center; /* Center align heading */
-  border: 1px solid #ccc; /* Add border */
-  border-radius: 5px;
   padding: 10px; /* Add padding */
   width: auto; /* Set width to auto */
 }
