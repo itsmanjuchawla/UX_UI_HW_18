@@ -96,6 +96,9 @@ p {
 /* My UX Skills section coded using CSS flex */
 
 #skillSectionHeading {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   font-family: Sansation;
   font-size: 3.5em;
   margin-bottom: 0px;
@@ -116,6 +119,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   gap: 1px; /* Adjust gap between items */
+  width: auto;
 }
 
 .skillItem {
@@ -125,6 +129,7 @@ p {
   border-radius: 5px;
   cursor: pointer;
   background-color: #0C0707;
+  width: auto;
 }
 
 .skillItem img {
@@ -223,7 +228,8 @@ p {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) 
+{
   .flexContainer {
     flex-direction: column;
   }
@@ -239,7 +245,7 @@ p {
     width: auto; /* Set width to auto */
   }
   .skillItem {
-    width: 100%;
+    width: auto;
   }
   .workGridArea img {
     width: 150px;
@@ -303,7 +309,7 @@ p {
   h1 {
     font-family: Sansation;
     font-size: 1.5em;
-    margin-bottom: `0px;
+    margin-bottom: 10px;
   }
   
   h3 {
@@ -321,5 +327,31 @@ p {
   p {
     font-family: Sansation;
     font-size: 0.75em;
+  }
+  nav ul li {
+    display:list-item;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Sansation;
+    font-style: normal;
+    font-size:medium;
+  }
+
+  .myWork {
+    padding: 150px 10px 50px; /* Added padding for navigation */
+  }
+
+  .mySkills {
+    text-align: center;
+    padding: 150px 10px 50px; /* Added padding for navigation */
+  }
+
+  .skillItem img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
   }
 }
